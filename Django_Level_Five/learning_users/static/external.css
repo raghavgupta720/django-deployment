@@ -1,0 +1,21 @@
+body{
+background-image: url('download_image.jpg');
+background-repeat:no-repeat;
+
+   background-size:cover;
+ background-attachment: fixed;
+/*height:100%;
+width:100%;*/
+background-repeat: no-repeat;
+/*background-position: center;*/
+/*color:black;*/
+opacity : 200;
+
+}
+/*.jumbotron{
+    background: url('download_image.jpg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   background-size: cover;
+   -o-background-size: cover;
+}*/

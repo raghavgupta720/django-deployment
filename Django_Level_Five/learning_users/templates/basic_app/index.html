@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+   
+<link rel="stylesheet" href="{% static 'external.css' %}" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body class="body1 p-5">
+    
+
+    <div class="container p-5">
+
+      <div class="jumbotron p-5" >
+    <form class=""  method="POST">
+      {% csrf_token %}
+      <font color="white" size="5">
+        <h2 align="center"> <u>Please fill the following details.</u></h2>
+        <p align="center"> Your response will help us</p>
+      {{ form.as_name }}
+
+       {{ form.as_p }}
+     </font >
+
+
+       <button type="sumbit" class="btn btn-primary"> submit</button>
+    </form>
+  </div>
+</div>
+
+  </body>
+</html>
